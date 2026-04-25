@@ -1,0 +1,17 @@
+# Temp / Office lock files
+~$*
+~WRL*.tmp
+*.tmp
+
+# Word docs and archives (working files, not website)
+*.docx
+*.zip
+
+# Windows shortcuts
+*.lnk
+
+# Pomelli archive folder (not needed for the site)
+pomelli archive/
+
+# Claude Code settings
+.claude/
