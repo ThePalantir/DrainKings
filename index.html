@@ -1006,6 +1006,7 @@
     }
 
     #why,
+    #about,
     #contact,
     .area-grid {
       grid-template-columns: 1fr;
@@ -1372,6 +1373,81 @@
       text-align: left;
     }
   }
+
+  /* ─── ABOUT ─── */
+  #about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+    background: var(--dark2);
+  }
+  .about-lead {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .about-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(212,150,10,0.1);
+    border: 1px solid var(--gold-dim);
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 2rem;
+  }
+  .about-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-top: 1.5rem;
+  }
+  .about-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+  .about-check {
+    color: var(--gold);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .about-callout {
+    margin-top: 2rem;
+    padding: 1.4rem 1.6rem;
+    background: var(--dark3);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.65;
+  }
+  .about-callout strong {
+    color: var(--white);
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
 </style>
 </head>
 <body>
@@ -1382,6 +1458,7 @@
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#why">Why Us</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#reviews">Reviews</a></li>
     <li><a href="#area">Service Area</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -1395,6 +1472,7 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="#services" onclick="toggleMenu()">Services</a>
   <a href="#why" onclick="toggleMenu()">Why Us</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
   <a href="#reviews" onclick="toggleMenu()">Reviews</a>
   <a href="#area" onclick="toggleMenu()">Service Area</a>
   <a href="#contact" onclick="toggleMenu()">Contact</a>
@@ -1583,6 +1661,31 @@
     <p class="section-desc reveal reveal-delay-2">We've built our reputation in the Mechanicsburg area by showing up, doing the job right, and leaving your home better than we found it. Every single time.</p>
     <br><br>
     <a href="tel:7174483716" class="btn-primary reveal reveal-delay-3">📞 Schedule Service Today</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div>
+    <div class="section-label reveal">About Us</div>
+    <h2 class="section-title reveal reveal-delay-1">Plumber in<br>Mechanicsburg, PA</h2>
+    <p class="about-lead reveal reveal-delay-2">If you need a qualified plumber, look no further than Drain Kings. Brian (owner) has over 20 years of plumbing and over 10 years of drain cleaning experience. His goal is to provide consistent service on all jobs large and small — whether you're looking to have a basic fixture repaired or want more extensive plumbing work done, Drain Kings is fully insured and state licensed for your protection.</p>
+    <div class="about-badge reveal reveal-delay-3">👑 Over 23 Years in the Industry</div>
+  </div>
+  <div>
+    <div class="section-label reveal">A Company You Can Trust</div>
+    <h2 class="section-title reveal reveal-delay-1">There's a Reason<br>Customers Keep Coming Back</h2>
+    <ul class="about-list reveal reveal-delay-2">
+      <li><span class="about-check">✓</span>Prompt, dependable service</li>
+      <li><span class="about-check">✓</span>Convenient scheduling</li>
+      <li><span class="about-check">✓</span>Reasonable rates</li>
+      <li><span class="about-check">✓</span>Fully insured &amp; state licensed</li>
+      <li><span class="about-check">✓</span>Courteous, well-informed plumbers who know their craft inside and out</li>
+    </ul>
+    <div class="about-callout reveal reveal-delay-3">
+      <strong>Upfront Estimates — Always</strong>
+      You'll always have the opportunity to approve an estimate before any work begins, so you know exactly what you're getting into — no surprises on cost or timeline.
+    </div>
   </div>
 </section>
 
